@@ -1,0 +1,227 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color:white;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    height:50%;
+    width:99vw;
+}
+.banner{
+    background-image: url(blog-ban.jpg);
+    z-index:6;
+    width:100%;
+    height:80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    transform: translateY(-5%);
+}
+.banner:hover{
+    background-size: 110%;
+    box-shadow: 0px 0px 30px skyblue;
+}
+.hero-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.hero-title .font1 {
+    font-family: 'Lobster', cursive;
+    color: aqua;
+}
+
+.hero-title .font2 {
+    font-family: 'Poppins', sans-serif;
+    color: blueviolet;
+}
+
+.head{
+    height:50px;
+    background-color:rgb(32, 27, 27);
+    display:flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index:10;
+    width:99vw;
+}
+.nav{
+    color:white;
+    text-decoration:none;
+    margin-left:100px;
+    border-radius:20px;
+    padding:0.8%;
+}
+.nav:hover{
+    background-color:orange;
+    box-shadow: 0px 0px 10px white;
+}
+.nav:active{
+    background-color:rgb(142, 95, 7);
+}
+.nav:hover::after {
+    transform: scaleX(1);
+}
+.cta-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(255, 69, 0);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:active::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: ripple 0.3s linear;
+}
+.cta-button:hover{
+    box-shadow:2px 2px 10px orange;
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Blog Post Hover Effect */
+.blog1, .blog2, .blog3 {
+    width: 75%;
+    background-color: rgb(43, 41, 41);
+    color: rgba(255, 255, 255, 0.753);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.more{
+    background-color: white;
+    display:inline-block;
+    color:grey;
+    padding:0.7%;
+    border-radius:4%;
+}
+.more:hover{
+    background-color: rgba(255, 255, 255, 0.468);
+    color:white;
+    cursor: pointer;
+}
+.more:active{
+    background-color: black;
+}
+.blog1:hover, .blog2:hover, .blog3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px white;
+}
+.blog1 img, .blog2 img, .blog3 img {
+    height: 70vh;
+    width:100vh;
+}
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.category-btn:hover {
+    background-color: blueviolet;
+    transform: scale(1.2);
+}
+.category-btn:active{
+    background-color: rgb(49, 13, 83);
+}
+.subscribe {
+    text-align: center;
+    padding: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.subscribe input:hover{
+    box-shadow:0px 0px 20px rgb(112, 241, 255);
+    border:none;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.subscribe-btn:hover {
+    box-shadow: 0px 0px 30px crimson;
+    background-color: rgb(173, 16, 47);
+}
+.subscribe-btn:active{
+    background-color:rgb(115, 10, 31);
+}
+html {
+    scroll-behavior: smooth;
+}
+footer{
+    background-color: rgb(9, 6, 97);
+    height:15vh;
+    text-align: center;
+}
+.tw{
+    color:rgb(58, 163, 215);
+}
+.in{
+    color:rgb(231, 45, 104);
+}
+.fa{
+    color:blue;
+}
+i{
+    font-size: 2.5rem;
+    padding-top:1%;
+    padding-left:2%;
+}
+i:hover{
+    text-shadow: 0px 0px 10px white;
+    position:relative;
+    bottom:5px;
+    cursor:pointer;
+}
+i:active{
+    text-shadow: 0px 0px 10px black;
+}
