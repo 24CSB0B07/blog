@@ -118,6 +118,9 @@ h1, h2 {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+.blog img:hover{
+    transform: scale(1.05);
+}
 .more{
     background-color: white;
     display:inline-block;
